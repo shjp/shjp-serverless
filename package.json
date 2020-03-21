@@ -1,0 +1,19 @@
+{
+  "name": "shjp-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sang-gon Lee",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda-multipart-parser": "^0.1.3",
+    "aws-sdk": "^2.619.0",
+    "busboy": "^0.3.1",
+    "multiparty": "^4.2.1",
+    "netlify-lambda": "^1.6.3",
+    "xtypejs": "^0.7.1"
+  }
+}
