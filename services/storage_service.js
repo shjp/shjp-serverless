@@ -17,3 +17,13 @@ export async function uploadImageFile({
     content: file,
   });
 }
+
+export async function uploadMassFile({ name, date, contentType, fileExtension, file }) {
+  const filename = `${date}_${name}.${fileExtension}`;
+  const key = `mass/${filename}`;
+  return await s3Manager.upload({
+    key,
+    contentType,
+    content: file,
+  });
+}
